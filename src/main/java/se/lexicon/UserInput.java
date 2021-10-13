@@ -35,7 +35,7 @@ public class UserInput {
         do {
             System.out.print("operator: ");
             operator = SCANNER.nextLine();
-            if (!Objects.equals(operator, "+") && !Objects.equals(operator, "-") && !Objects.equals(operator, "*") && !Objects.equals(operator, "/")){
+            if (!operator.equals("+") && !operator.equals("-") && !operator.equals("*") && !operator.equals("/")){
                 System.out.println("This operator is not supported");
                 inValidOperator = true;
             }else {
